@@ -654,7 +654,7 @@
 // Mechanical endstop with COM to ground and NC to Signal uses "false" here (most common setup).
 #define X_MIN_ENDSTOP_INVERTING true // Set to true to invert the logic of the endstop.
 #define Y_MIN_ENDSTOP_INVERTING true // Set to true to invert the logic of the endstop.
-#define Z_MIN_ENDSTOP_INVERTING false // Set to true to invert the logic of the endstop.
+#define Z_MIN_ENDSTOP_INVERTING true // Set to true to invert the logic of the endstop.
 #define X_MAX_ENDSTOP_INVERTING false // Set to true to invert the logic of the endstop.
 #define Y_MAX_ENDSTOP_INVERTING false // Set to true to invert the logic of the endstop.
 #define Z_MAX_ENDSTOP_INVERTING false // Set to true to invert the logic of the endstop.
@@ -892,6 +892,8 @@
 #define BLTOUCH
 #define BLTOUCH_SET_5V_MODE
 #define BLTOUCH_HS_MODE
+#define USE_PROBE_FOR_Z_HOMING
+//#define SERVO0_PIN 6
 
 /**
  * Touch-MI Probe by hotends.fr
@@ -956,7 +958,7 @@
  * Specify a Probe position as { X, Y, Z }
  */
 //#define NOZZLE_TO_PROBE_OFFSET { 28, -33, -5.02 } // BLTouch an schwarzem Cover
-#define NOZZLE_TO_PROBE_OFFSET {38,-15,-1.655} // 3d Touch an weißer Schrägbefestigung
+#define NOZZLE_TO_PROBE_OFFSET {38,-15,-2.11}
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
